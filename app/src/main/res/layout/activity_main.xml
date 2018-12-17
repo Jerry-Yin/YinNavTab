@@ -3,7 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        xmlns:ytb="http://schemas.android.com/apk/res-auto"
+        xmlns:ynt="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
@@ -32,36 +32,37 @@
                     android:text="1.默认样式：(水平，无背景颜色)"
                     android:textSize="10sp"/>
 
-            <!--<com.android.jay.androiddiy.views.YinTabButton-->
-                    <!--android:id="@+id/tab"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="40dp">-->
-            <!--</com.android.jay.androiddiy.views.YinTabButton>-->
+            <com.jayyin.developer.yinnavtab.views.YinNavTab
+                    android:id="@+id/tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp">
+            </com.jayyin.developer.yinnavtab.views.YinNavTab>
 
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:text="2.自定义样式：（包含点击的动画效果、滑动切换等）"
-                    android:textSize="10sp" />
+                    android:textSize="10sp"/>
 
-            <!--<com.android.jay.androiddiy.views.YinTabButton-->
-                    <!--android:id="@+id/tab2"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="45dp"-->
-                    <!--android:background="@color/colorGray1"-->
-                    <!--android:orientation="horizontal"-->
-                    <!--android:elevation="5dp"-->
-                    <!--android:layout_marginTop="10dp"-->
-                    <!--ytb:tabSize="4"-->
-                    <!--ytb:titleSize="7sp"-->
-                    <!--ytb:color="@color/colorPrimary"-->
-                    <!--ytb:colorSelected="@color/colorAccent"-->
-                    <!--ytb:indicatorHeight="3dp"-->
-                    <!--ytb:indicatorWidth="50dp"-->
-                    <!--ytb:isScale="true"-->
-                    <!--ytb:scaleValue="8">-->
-            <!--</com.android.jay.androiddiy.views.YinTabButton>-->
+            <com.jayyin.developer.yinnavtab.views.YinNavTab
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/colorGray1"
+                    android:orientation="horizontal"
+                    android:elevation="5dp"
+                    android:layout_marginTop="10dp"
+                    ynt:tabSize="4"
+                    ynt:titleSize="7sp"
+                    ynt:color="@color/colorPrimary"
+                    ynt:colorSelected="@color/colorAccent"
+                    ynt:indicatorHeight="3dp"
+                    ynt:indicatorWidth="15dp"
+                    ynt:isScale="true"
+                    ynt:scaleValue="8">
+            </com.jayyin.developer.yinnavtab.views.YinNavTab>
 
             <TextView
                     android:layout_width="wrap_content"
@@ -70,20 +71,20 @@
                     android:text="3.竖直排列样式："
                     android:textSize="10sp"/>
 
-            <!--<com.android.jay.androiddiy.views.YinTabButton-->
-                    <!--android:id="@+id/tab3"-->
-                    <!--android:layout_width="45dp"-->
-                    <!--android:layout_height="250dp"-->
-                    <!--android:layout_gravity="left"-->
-                    <!--android:elevation="5dp"-->
-                    <!--android:layout_marginBottom="10dp"-->
-                    <!--android:background="@color/colorGray1"-->
-                    <!--android:orientation="vertical"-->
-                    <!--ytb:tabSize="6"-->
-                    <!--ytb:indicatorHeight="3dp"-->
-                    <!--ytb:indicatorWidth="50dp"-->
-                    <!--ytb:scaleValue="6">-->
-            <!--</com.android.jay.androiddiy.views.YinTabButton>-->
+            <com.jayyin.developer.yinnavtab.views.YinNavTab
+                    android:id="@+id/tab3"
+                    android:layout_width="45dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="left"
+                    android:elevation="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorGray1"
+                    android:orientation="vertical"
+                    ynt:tabSize="6"
+                    ynt:indicatorHeight="3dp"
+                    ynt:indicatorWidth="50dp"
+                    ynt:scaleValue="6">
+            </com.jayyin.developer.yinnavtab.views.YinNavTab>
         </LinearLayout>
     </ScrollView>
 

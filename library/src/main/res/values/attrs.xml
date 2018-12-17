@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="YinNavTab">
+        <!--文字/标签颜色-->
         <attr name="color" format="color"/>
+        <!--选中时的文字颜色-->
         <attr name="colorSelected" format="color"/>
+        <!--标签数量-->
         <attr name="tabSize" format="integer"/>
+        <!--文字标题尺寸-->
         <attr name="titleSize" format="dimension"/>
+        <!--标签指示器是否显示（默认显示）-->
         <attr name="indicatorsVisible" format="boolean"/>
+        <!--指示器宽度-->
         <attr name="indicatorWidth" format="dimension"/>
+        <!--指示器高度-->
         <attr name="indicatorHeight" format="dimension"/>
+        <!--是否缩放动画效果（默认不支持）-->
         <attr name="isScale" format="boolean"/>
+        <!--缩放的最大值（int）-->
         <attr name="scaleValue" format="float"/>
     </declare-styleable>
 
