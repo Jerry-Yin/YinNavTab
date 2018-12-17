@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="YinNavTab">
+        <attr name="color" format="color"/>
+        <attr name="colorSelected" format="color"/>
+        <attr name="tabSize" format="integer"/>
+        <attr name="titleSize" format="dimension"/>
+        <attr name="indicatorsVisible" format="boolean"/>
+        <attr name="indicatorWidth" format="dimension"/>
+        <attr name="indicatorHeight" format="dimension"/>
+        <attr name="isScale" format="boolean"/>
+        <attr name="scaleValue" format="float"/>
+    </declare-styleable>
+
+</resources>

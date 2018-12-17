@@ -1,19 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:ytb="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:text="自定义控件 -- YinNavTab"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.默认样式：(水平，无背景颜色)"
+                    android:textSize="10sp"/>
+
+            <!--<com.android.jay.androiddiy.views.YinTabButton-->
+                    <!--android:id="@+id/tab"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp">-->
+            <!--</com.android.jay.androiddiy.views.YinTabButton>-->
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="2.自定义样式：（包含点击的动画效果、滑动切换等）"
+                    android:textSize="10sp" />
+
+            <!--<com.android.jay.androiddiy.views.YinTabButton-->
+                    <!--android:id="@+id/tab2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:background="@color/colorGray1"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--ytb:tabSize="4"-->
+                    <!--ytb:titleSize="7sp"-->
+                    <!--ytb:color="@color/colorPrimary"-->
+                    <!--ytb:colorSelected="@color/colorAccent"-->
+                    <!--ytb:indicatorHeight="3dp"-->
+                    <!--ytb:indicatorWidth="50dp"-->
+                    <!--ytb:isScale="true"-->
+                    <!--ytb:scaleValue="8">-->
+            <!--</com.android.jay.androiddiy.views.YinTabButton>-->
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="3.竖直排列样式："
+                    android:textSize="10sp"/>
+
+            <!--<com.android.jay.androiddiy.views.YinTabButton-->
+                    <!--android:id="@+id/tab3"-->
+                    <!--android:layout_width="45dp"-->
+                    <!--android:layout_height="250dp"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:background="@color/colorGray1"-->
+                    <!--android:orientation="vertical"-->
+                    <!--ytb:tabSize="6"-->
+                    <!--ytb:indicatorHeight="3dp"-->
+                    <!--ytb:indicatorWidth="50dp"-->
+                    <!--ytb:scaleValue="6">-->
+            <!--</com.android.jay.androiddiy.views.YinTabButton>-->
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
