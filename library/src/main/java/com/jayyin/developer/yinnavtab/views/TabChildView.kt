@@ -188,8 +188,8 @@ class TabChildView : LinearLayout {
                     mTextView!!.layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f)
                     mTextView!!.gravity = Gravity.START
 
-                    if (s > 30)
-                        s = 30
+                    if (s > 60)
+                        s = 60
                     mIndicator!!.layoutParams = RelativeLayout.LayoutParams(s, s)
                     var lp = RelativeLayout.LayoutParams(mIndicator!!.layoutParams)
                     lp.setMargins(indicatorPaddingLeft!!.toInt(), 0, indicatorPaddingRight!!.toInt(), 0)
@@ -284,6 +284,12 @@ class TabChildView : LinearLayout {
     fun setIndicatorSize(width: Float, height: Float) {
         this.indicatorsWidth = width
         this.indicatorsHeight = height
+        resetView(mContext!!)
+    }
+
+    fun setIndicatorPadding(paddingLeft: Float, paddingRight: Float) {
+        this.indicatorPaddingLeft = paddingLeft
+        this.indicatorPaddingRight = paddingRight
         resetView(mContext!!)
     }
 

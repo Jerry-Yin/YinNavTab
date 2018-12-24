@@ -13,6 +13,9 @@
     <!--指示器高度-->
     <attr name="indicatorHeight" format="dimension"/>
 
+    <attr name="indicatorPaddingRight" format="dimension"/>
+    <attr name="indicatorPaddingLeft" format="dimension"/>
+
     <!--图片尺寸-->
     <attr name="imageWidth" format="dimension"/>
     <attr name="imageHeight" format="dimension"/>
@@ -47,8 +50,8 @@
         <attr name="indicatorColor" format="color|reference"/>
         <!--<attr name="indicatorPaddingLeft" format="dimension"/>-->
         <!--横向 普通文字 模式下，文字距离左边圆形指示标的距离-->
-        <attr name="indicatorPaddingRight" format="dimension"/>
-        <attr name="indicatorPaddingLeft" format="dimension"/>
+        <attr name="indicatorPaddingRight"/>
+        <attr name="indicatorPaddingLeft"/>
         <attr name="orientationView">
             <enum name="horizontal" value="0"/>
             <enum name="vertical" value="1"/>
@@ -83,6 +86,9 @@
             <enum name="horizontal" value="0"/>
             <enum name="vertical" value="1"/>
         </attr>
+
+        <attr name="indicatorPaddingRight"/>
+        <attr name="indicatorPaddingLeft"/>
 
         <attr name="mode"/>
         <attr name="imageWidth"/>

@@ -60,6 +60,9 @@ class YinNavTab : LinearLayout {
     private var indicatorsWidth: Float = 100F
     private var indicatorsVisible = true
 
+    private var indicatorPaddingLeft: Float? = null
+    private var indicatorPaddingRight: Float? = null
+
     //anim asst
     private var mIsAnimoScale = false
     private var scaleValue = 5.0f
@@ -139,6 +142,8 @@ class YinNavTab : LinearLayout {
             indicatorsVisible = typeArray.getBoolean(R.styleable.YinNavTab_indicatorsVisible, indicatorsVisible)
             indicatorsHeight = typeArray.getDimension(R.styleable.YinNavTab_indicatorHeight, indicatorsHeight)
             indicatorsWidth = typeArray.getDimension(R.styleable.YinNavTab_indicatorWidth, indicatorsWidth)
+            indicatorPaddingLeft = typeArray.getDimension(R.styleable.YinNavTab_indicatorPaddingLeft, 10.0f)
+            indicatorPaddingRight = typeArray.getDimension(R.styleable.YinNavTab_indicatorPaddingRight, 10.0f)
             scaleValue = typeArray.getFloat(R.styleable.YinNavTab_scaleValue, scaleValue)
             size = typeArray.getInt(R.styleable.YinNavTab_tabSize, size)
             textSize = typeArray.getDimension(R.styleable.YinNavTab_textSize, textSize)
@@ -372,6 +377,13 @@ class YinNavTab : LinearLayout {
         this.indicatorsHeight = height
         initView(c, null)
     }
+
+    fun setIndicatorPadding(paddingLeft: Float, paddingRight: Float) {
+        this.indicatorPaddingLeft = paddingLeft
+        this.indicatorPaddingRight = paddingRight
+        initView(c, null)
+    }
+
 
     /**
      *

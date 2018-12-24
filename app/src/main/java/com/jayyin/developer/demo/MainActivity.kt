@@ -1,5 +1,6 @@
 package com.jayyin.developer.demo
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -55,5 +56,24 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+
+        tab4.setOnClickListener(object : YinNavTab.OnClickListener {
+            override fun onClick(view: View, position: Int) {
+                Toast.makeText(this@MainActivity, "clicked tab " + position, Toast.LENGTH_SHORT).show()
+            }
+
+        })
+
+        tab4.setOnScrollerListener(object : YinNavTab.OnScrollerListener {
+            override fun onScroller(view: View, position: Int) {
+                Toast.makeText(this@MainActivity, "scrolle to tab " + position, Toast.LENGTH_SHORT).show()
+
+            }
+
+        })
+
+        btn_mode2.setOnClickListener {
+            startActivity(Intent(this, YinNavTabMode2Activity::class.java))
+        }
     }
 }
