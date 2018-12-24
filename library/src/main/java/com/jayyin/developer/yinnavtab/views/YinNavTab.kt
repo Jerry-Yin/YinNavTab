@@ -1,4 +1,4 @@
-package com.android.jay.androiddiy.views
+package com.jayyin.developer.yinnavtab.views
 
 import android.annotation.SuppressLint
 import android.content.Context
