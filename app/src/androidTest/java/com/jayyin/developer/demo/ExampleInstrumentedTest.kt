@@ -1,4 +1,4 @@
-package com.jayyin.developer.yinnavtab
+package com.jayyin.developer.demo
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.jayyin.developer.yinnavtab
+package com.jayyin.developer.demo
 
 import org.junit.Test
 

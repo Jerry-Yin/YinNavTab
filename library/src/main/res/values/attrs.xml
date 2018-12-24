@@ -1,24 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--字体大小-->
+    <attr name="textSize" format="dimension|reference"/>
+    <!--文字/标签颜色-->
+    <attr name="color" format="color|reference"/>
+
+    <!--标签指示器是否显示（默认显示）-->
+    <attr name="indicatorsVisible" format="boolean"/>
+    <!--指示器宽度-->
+    <attr name="indicatorWidth" format="dimension"/>
+    <!--指示器高度-->
+    <attr name="indicatorHeight" format="dimension"/>
+
+    <!--图片尺寸-->
+    <attr name="imageWidth" format="dimension"/>
+    <attr name="imageHeight" format="dimension"/>
+    <attr name="imgPaddingRight" format="dimension"/>
+    <attr name="imgPaddingLeft" format="dimension"/>
+
+    <!--显示模式-->
+    <attr name="mode">
+        <!--1.文字+下标 （默认）-->
+        <enum name="normal" value="0"/>
+        <!--2.图片+文字 -->
+        <enum name="drawable" value="1"/>
+    </attr>
+
+
+    <!--Tab中单个view 【TabChildView】的样式-->
+    <declare-styleable name="TabChildView">
+        <attr name="color"/>
+        <attr name="text" format="string"/>
+        <!--文字标题尺寸-->
+        <attr name="textSize"/>
+        <attr name="image" format="integer"/>
+        <attr name="imageWidth"/>
+        <attr name="imageHeight"/>
+        <attr name="imgPaddingRight"/>
+        <attr name="imgPaddingLeft"/>
+        <attr name="indicatorsVisible"/>
+        <!--指示器宽度-->
+        <attr name="indicatorWidth"/>
+        <!--指示器高度-->
+        <attr name="indicatorHeight"/>
+        <attr name="indicatorColor" format="color|reference"/>
+        <!--<attr name="indicatorPaddingLeft" format="dimension"/>-->
+        <!--横向 普通文字 模式下，文字距离左边圆形指示标的距离-->
+        <attr name="indicatorPaddingRight" format="dimension"/>
+        <attr name="indicatorPaddingLeft" format="dimension"/>
+        <attr name="orientationView">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="mode"/>
+        <attr name="src" format="reference"/>
+    </declare-styleable>
+
+
+    <!--Tab的样式【YinNavTab】-->
     <declare-styleable name="YinNavTab">
-        <!--文字/标签颜色-->
-        <attr name="color" format="color"/>
+        <!--&lt;!&ndash;文字/标签颜色&ndash;&gt;-->
+        <attr name="color"/>
         <!--选中时的文字颜色-->
-        <attr name="colorSelected" format="color"/>
+        <attr name="colorSelected" format="color|reference"/>
+        <!--文字标题尺寸-->
+        <attr name="textSize"/>
         <!--标签数量-->
         <attr name="tabSize" format="integer"/>
-        <!--文字标题尺寸-->
-        <attr name="titleSize" format="dimension"/>
         <!--标签指示器是否显示（默认显示）-->
-        <attr name="indicatorsVisible" format="boolean"/>
+        <attr name="indicatorsVisible"/>
         <!--指示器宽度-->
-        <attr name="indicatorWidth" format="dimension"/>
+        <attr name="indicatorWidth"/>
         <!--指示器高度-->
-        <attr name="indicatorHeight" format="dimension"/>
+        <attr name="indicatorHeight"/>
         <!--是否缩放动画效果（默认不支持）-->
         <attr name="isScale" format="boolean"/>
         <!--缩放的最大值（int）-->
         <attr name="scaleValue" format="float"/>
+
+        <attr name="orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+
+        <attr name="mode"/>
+        <attr name="imageWidth"/>
+        <attr name="imageHeight"/>
+        <attr name="imgPaddingRight"/>
+        <attr name="imgPaddingLeft"/>
     </declare-styleable>
 
 </resources>

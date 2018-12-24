@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.jayyin.developer.yinnavtab"
+        applicationId 'com.jayyin.developer.yinnavtab.demo'
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
@@ -20,6 +20,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
@@ -30,7 +32,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
-    implementation 'com.github.Jerry-Yin:YinNavTab:v1.0.1-test'
-
+    implementation 'com.github.Jerry-Yin:YinNavTab:v1.0.0-release'
 }
