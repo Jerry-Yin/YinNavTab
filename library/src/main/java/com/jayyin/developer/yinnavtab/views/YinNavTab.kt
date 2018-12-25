@@ -169,7 +169,6 @@ class YinNavTab : LinearLayout {
             val childView = TabChildView(c, mCurMode)
             //mode
             childView.setMode(mCurMode)
-            childView.setIndicatorPadding(indicatorPaddingLeft!!, indicatorPaddingRight!!)
             //set drawable
             if (mOrientation == LinearLayout.VERTICAL) {
                 childView.layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0, 1.0f)
@@ -193,6 +192,7 @@ class YinNavTab : LinearLayout {
                 childView.setIndicatorColor(color!!)
                 childView.setIndicatorVisibility(indicatorsVisible)
                 childView.setIndicatorSize(indicatorsWidth, indicatorsHeight)
+                childView.setIndicatorPadding(indicatorPaddingLeft!!, indicatorPaddingRight!!)
             }
 
             mChildViews.add(childView)
