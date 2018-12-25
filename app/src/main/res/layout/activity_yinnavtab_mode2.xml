@@ -63,7 +63,6 @@
                     android:layout_marginTop="10dp"
                     app:tabSize="4"
                     app:textSize="5sp"
-                    app:color="@color/colorPrimary"
                     app:colorSelected="@color/colorAccent"
                     app:indicatorHeight="3dp"
                     app:indicatorWidth="20dp"

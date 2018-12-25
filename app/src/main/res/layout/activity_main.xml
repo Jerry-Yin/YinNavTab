@@ -102,9 +102,10 @@
                         app:orientation="vertical"
                         app:tabSize="6"
                         app:isScale="true"
-                        app:indicatorHeight="45dp"
-                        app:indicatorWidth="45dp"
-                        app:indicatorPaddingLeft="10dp">
+                        app:indicatorHeight="15dp"
+                        app:indicatorWidth="15dp"
+                        app:indicatorPaddingLeft="20dp"
+                        app:indicatorPaddingRight="40dp">
                 </com.jayyin.developer.yinnavtab.views.YinNavTab>
             </LinearLayout>
 
