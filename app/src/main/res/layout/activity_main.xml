@@ -104,7 +104,7 @@
                         app:isScale="true"
                         app:indicatorHeight="45dp"
                         app:indicatorWidth="45dp"
-                        app:indicatorPaddingRight="40dp"
+                        app:indicatorPaddingRight="20dp"
                         app:indicatorPaddingLeft="40dp">
                 </com.jayyin.developer.yinnavtab.views.YinNavTab>
             </LinearLayout>

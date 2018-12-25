@@ -127,12 +127,6 @@ class YinNavTab : LinearLayout {
         Log.d(TAG, "initView")
         Log.d(TAG, "childCount：" + this.childCount.toString())
 
-        if (this.childCount > 0) {
-            this.removeAllViews()
-            mChildViews.clear()
-            Log.d(TAG, " removed & now childCount：" + this.childCount.toString())
-        }
-
         val typeArray = c.obtainStyledAttributes(attrs, R.styleable.YinNavTab)
         if (typeArray != null) {
             mCurMode = typeArray.getInteger(R.styleable.YinNavTab_mode, mCurMode)
@@ -157,13 +151,25 @@ class YinNavTab : LinearLayout {
         if (size != mDrawableIds.size) {
             initDefaultTitlesDrawables()
         }
-
         this.orientation = mOrientation
+
+        resetView()
+    }
+
+
+    fun resetView(){
+        this.orientation = mOrientation
+        if (this.childCount > 0) {
+            this.removeAllViews()
+            mChildViews.clear()
+            Log.d(TAG, " removed & now childCount：" + this.childCount.toString())
+        }
 
         for (i in 0..size - 1) {
             val childView = TabChildView(c, mCurMode)
             //mode
             childView.setMode(mCurMode)
+            childView.setIndicatorPadding(indicatorPaddingLeft!!, indicatorPaddingRight!!)
             //set drawable
             if (mOrientation == LinearLayout.VERTICAL) {
                 childView.layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0, 1.0f)
@@ -368,20 +374,19 @@ class YinNavTab : LinearLayout {
 
     fun indicatorsVisible(show: Boolean) {
         this.indicatorsVisible = show
-//        this.invalidate()
-        initView(c, null)
+        resetView()
     }
 
     fun setIndicatorSize(width: Float, height: Float) {
         this.indicatorsWidth = width
         this.indicatorsHeight = height
-        initView(c, null)
+        resetView()
     }
 
     fun setIndicatorPadding(paddingLeft: Float, paddingRight: Float) {
         this.indicatorPaddingLeft = paddingLeft
         this.indicatorPaddingRight = paddingRight
-        initView(c, null)
+        resetView()
     }
 
 
@@ -392,30 +397,30 @@ class YinNavTab : LinearLayout {
      */
     fun setTabOrientation(o: Int) {
         this.mOrientation = o
-        initView(c, null)
+        resetView()
     }
 
     fun setColor(color: Int) {
         this.color = color
 //        this.invalidate()
-        initView(c, null)
+        resetView()
     }
 
     fun setSelectedColor(color: Int) {
         this.colorSelected = color
-        initView(c, null)
+        resetView()
     }
 
     fun setTitles(titles: ArrayList<String>) {
         this.titles = titles
         this.size = titles.size
-        initView(c, null)
+        resetView()
     }
 
     fun setTitle(title: String, index: Int) {
         if (size > 0 && index <= size - 1) {
             titles[index] = title
-            initView(c, null)
+            resetView()
         }
     }
 
@@ -430,7 +435,7 @@ class YinNavTab : LinearLayout {
                 mDrawableIds.add(drawableIds[i])
                 mDrawableSelectedIds.add(drawableSelectedIds[i])
             }
-            initView(c, null)
+            resetView()
         }
     }
 
@@ -449,7 +454,7 @@ class YinNavTab : LinearLayout {
 
     fun setMode(mode: Int) {
         this.mCurMode = mode
-        initView(c, null)
+        resetView()
     }
 
     interface OnClickListener : View.OnClickListener {

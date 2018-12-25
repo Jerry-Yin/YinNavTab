@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                 <com.jayyin.developer.yinnavtab.views.YinNavTab
-                        android:id="@+id/tab3"
+                        android:id="@+id/tab2_3"
                         android:layout_width="100dp"
                         android:layout_height="250dp"
                         android:layout_marginBottom="10dp"
@@ -93,8 +93,8 @@
                 </com.jayyin.developer.yinnavtab.views.YinNavTab>
 
                 <com.jayyin.developer.yinnavtab.views.YinNavTab
-                        android:id="@+id/tab4"
-                        android:layout_width="100dp"
+                        android:id="@+id/tab2_4"
+                        android:layout_width="wrap_content"
                         android:layout_height="250dp"
                         android:layout_marginLeft="15dp"
                         android:elevation="5dp"
@@ -107,8 +107,8 @@
                         app:scaleValue="5"
                         app:indicatorHeight="45dp"
                         app:indicatorWidth="45dp"
-                        app:indicatorPaddingRight="40dp"
-                        app:indicatorPaddingLeft="20dp">
+                        app:imgPaddingLeft="20dp"
+                        app:imgPaddingRight="25dp">
                 </com.jayyin.developer.yinnavtab.views.YinNavTab>
             </LinearLayout>
         </LinearLayout>
