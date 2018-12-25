@@ -88,7 +88,9 @@
                         android:layout_width="100dp"
                         android:layout_height="250dp"
                         android:layout_marginBottom="10dp"
-                        app:orientation="vertical">
+                        app:orientation="vertical"
+                        app:indicatorHeight="15dp"
+                        app:indicatorWidth="15dp">
                 </com.jayyin.developer.yinnavtab.views.YinNavTab>
 
                 <com.jayyin.developer.yinnavtab.views.YinNavTab
@@ -104,8 +106,8 @@
                         app:isScale="true"
                         app:indicatorHeight="15dp"
                         app:indicatorWidth="15dp"
-                        app:indicatorPaddingLeft="20dp"
-                        app:indicatorPaddingRight="40dp">
+                        app:indicatorPaddingLeft="15dp"
+                        app:indicatorPaddingRight="15dp">
                 </com.jayyin.developer.yinnavtab.views.YinNavTab>
             </LinearLayout>
 

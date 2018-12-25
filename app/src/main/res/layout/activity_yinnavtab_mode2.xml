@@ -93,7 +93,7 @@
 
                 <com.jayyin.developer.yinnavtab.views.YinNavTab
                         android:id="@+id/tab2_4"
-                        android:layout_width="wrap_content"
+                        android:layout_width="150dp"
                         android:layout_height="250dp"
                         android:layout_marginLeft="15dp"
                         android:elevation="5dp"
