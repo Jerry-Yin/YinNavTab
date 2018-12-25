@@ -29,7 +29,7 @@
 
 
 ## 整体效果图预览
-<div align=center><img src="images/img_v1_2_0-release.gif"/></div>
+<div align="center"><img src="images/img_v1_2_0-release.gif" width="300" hegiht="168"/> </div>
 
 
 # 使用
