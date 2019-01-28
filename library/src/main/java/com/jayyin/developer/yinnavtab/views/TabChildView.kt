@@ -157,7 +157,7 @@ class TabChildView : LinearLayout {
         this.orientation = mOrientation     //default vertical
         mImageView!!.setImageDrawable(mDrawable)
         mTextView!!.text = text
-        mTextView!!.textSize = textSize!!
+        mTextView!!.paint.textSize = textSize!!
         mTextView!!.setTextColor(color)
         mIndicator!!.setBackgroundColor(indicatorColor)
 
